@@ -6,7 +6,7 @@ This also includes:
 
 - @babel/plugin-proposal-class-properties => to avoid having to call the constructor and super when declaring a state object.
 
-- html-webpack-plugin => to generate the production index.html from a template at aour src
+- html-webpack-plugin => to generate the production index.html from a template at our src
 
 It may be improved by: 
 
