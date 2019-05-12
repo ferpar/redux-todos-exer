@@ -14,3 +14,4 @@ It may be improved by:
 - Targeting specific browsers with babel-preset-env & babel-polyfill
 - adding eslint, prettier, & husky
 - Configuring sass @ webpack
+- Adding babel-polyfill if not specifically targeting newer brwosers: for async/await support @ webpack
