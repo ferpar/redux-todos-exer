@@ -13,3 +13,4 @@ It may be improved by:
 - Externalizing dependencies via CDN (react & react-dom)
 - Targeting specific browsers with babel-preset-env & babel-polyfill
 - adding eslint, prettier, & husky
+- Configuring sass @ webpack
