@@ -27,6 +27,25 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
         exclude: /node_modules/
+      },
+      {
+        oneOf:[
+          {
+            test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
+            loader: 'url-loader',
+            exclude: /node_modules/,
+            options: {
+              limit: 10000,
+            },
+          },
+          {
+            loader: 'file-loader',
+            exclude: [/node_modules/, /\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /|json$/],
+            options: {
+              publicPath: 'assets'
+            }
+          }
+        ]
       }
     ]
   },
