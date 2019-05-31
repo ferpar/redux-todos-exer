@@ -36,6 +36,8 @@ module.exports = {
             exclude: /node_modules/,
             options: {
               limit: 10000,
+              outputPath: 'images',
+              publicPath: 'images'
             },
           },
           {
