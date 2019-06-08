@@ -5,22 +5,22 @@ import {
   SET_FILTER
 } from './actionTypes.js'
 
-let id = 0;
+let idx = 0;
 
 export const addTodo = text => ({
   type: ADD_TODO,
   text,
-  id: id++ 
+  idx: idx++ 
 })
 
-export const remTodo = id => ({
+export const remTodo = idx => ({
   type: REM_TODO,
-  id
+  idx
 })
 
-export const toggleTodo = id => ({
+export const toggleTodo = idx => ({
   type: TOGGLE_TODO,
-  id
+  idx
 })
 
 export const setFilter = value => ({

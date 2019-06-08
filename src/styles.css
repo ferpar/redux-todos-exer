@@ -22,6 +22,49 @@ img {
   height: auto;
 }
 
-.warning {
-  color: tomato;
+.main-title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.main {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  padding: 0 2rem;
+}
+
+.input-form {
+  margin-left: 2rem;
+}
+
+.todo-list {
+  align-items: center;
+  border: 1px solid blue;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 1rem;
+}
+
+.todo-list > ol > * {
+  margin-bottom: 1rem;
+}
+
+.complete {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.filter {
+  margin-left: 2rem;
+}
+
+.filter > span {
+  margin-right: 1rem;
+}
+
+.checked {
+  text-decoration: underline;
 }
