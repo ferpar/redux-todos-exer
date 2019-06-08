@@ -8,10 +8,18 @@ const AddTodoP = ({addTodoC}) => {
 
   const [text, setText] = useState('')
 
+  const handleSubmit = (e,text) => {
+    e.preventDefault();
+    addTodoC(text);
+    setText('');
+  }
+
   return (
     <div className="input-form">
-      <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
-      <button onClick={() => addTodoC(text)} >Add ToDo</button>
+      <form onSubmit={(e) => handleSubmit(e, text)}>
+        <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+        <button type="submit" >Add ToDo</button>
+      </form>
     </div>
   )
 }
